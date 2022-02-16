@@ -18,12 +18,29 @@ import { flashloanTable, priceTable } from "./consoleUI/table";
 import { initPriceTable, renderTables } from "./consoleUI";
 import { createRoutes } from "./price/1inch/route";
 
+// Fix to work in Heroku
+const getWindowWidth = () => {
+  const getWindowSizeType = typeof process.stdout.getWindowSize;
+  console.log({ getWindowSizeType });
+
+  if (getWindowSizeType === "function") {
+    const result = process.stdout.getWindowSize();
+    console.log({ result });
+    if (Array.isArray(result)) {
+      const [maxX, _] = result;
+      return maxX;
+    }
+  }
+
+  return 160;
+};
+
 export const main = async () => {
   console.clear();
 
   let isFlashLoaning = false;
 
-  const [maxX, _] = process.stdout.getWindowSize();
+  const maxX = getWindowWidth();
 
   const p = priceTable(maxX);
   const pp = flashloanTable(maxX);
