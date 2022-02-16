@@ -3,9 +3,9 @@ import { ERC20Token } from "./constants/addresses";
 export const renderInterval = 1 * 1000;
 
 // interval of price check (ms)
-export const interval = 10 * 1000;
+export const interval = 3 * 1000;
 
-export const loanAmount = 1000;
+export const loanAmount = 333333;
 export const diffAmount = 10; // Not enough amount to return loan
 
 //export const chainId = 1;// Ethereum
@@ -38,11 +38,11 @@ export const tradingTokens = [
 
 /**
  * @type {string} public flashloan contract address
- * Polyscan: https://polygonscan.com/address/0x568a23ad22041683468cd1d3a6968d7e7dc20d40
+ * Polyscan: https://polygonscan.com/address/0xaD8064198dCFC8Cc5e6EE4a65C4841ec6295a46c
  * if you have deployed your own contract, you can use it instead of the default one
  */
 export const flashloanAddress: string =
-  "0x33d8d437796bd43bdccc6740c585f4a15d1070b7";
+  "0xaD8064198dCFC8Cc5e6EE4a65C4841ec6295a46c";
 
 /**
  * The bot can trade on UniswapV2 fork dexes(ex. SushiSwap) and UniswapV3
@@ -53,7 +53,7 @@ export const protocols =
   "POLYGON_SUSHISWAP,POLYGON_QUICKSWAP,POLYGON_APESWAP,POLYGON_JETSWAP,POLYGON_WAULTSWAP,POLYGON_UNISWAP_V3";
 
 export const gasLimit = 15000000;
-export const gasPrice = 30; // gwei
+export const gasPrice = 115; // gwei
 
 export const routeParts = [
   [10000],
