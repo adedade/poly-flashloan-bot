@@ -30,10 +30,11 @@ export const baseTokens = [
 
 export const tradingTokens = [
   ERC20Token.DAI,
-  ERC20Token.WETH,
+  // ERC20Token.WETH,
   ERC20Token.USDC,
   ERC20Token.USDT,
-  ERC20Token.WMATIC,
+  // ERC20Token.WMATIC,
+  ERC20Token.WBTC,
 ];
 
 /**
@@ -53,7 +54,7 @@ export const protocols =
   "POLYGON_SUSHISWAP,POLYGON_QUICKSWAP,POLYGON_APESWAP,POLYGON_JETSWAP,POLYGON_WAULTSWAP,POLYGON_UNISWAP_V3";
 
 export const gasLimit = 15000000;
-export const gasPrice = 90; // gwei
+export const gasPrice = 200; // gwei
 
 export const routeParts = [
   [10000],
