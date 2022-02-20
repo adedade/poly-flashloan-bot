@@ -20,19 +20,13 @@ export const explorerURL = "https://polygonscan.com";
  * profits are sent in baseToken if a transaction is successful.
  */
 
-export const baseTokens = [
-  ERC20Token.DAI,
-  // ERC20Token.WETH,
-  ERC20Token.USDC,
-  // ERC20Token.USDT,
-  // ERC20Token.WMATIC,
-];
+export const baseTokens = [ERC20Token.DAI, ERC20Token.USDC];
 
 export const tradingTokens = [
   ERC20Token.DAI,
   ERC20Token.WETH,
   ERC20Token.USDC,
-  ERC20Token.USDT,
+  // ERC20Token.USDT,
   ERC20Token.WMATIC,
   ERC20Token.WBTC,
 ];
