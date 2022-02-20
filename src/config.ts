@@ -5,7 +5,7 @@ export const interval = 1_200;
 
 export const renderInterval = Math.floor(interval / 2);
 
-export const loanAmount = 33333;
+export const loanAmount = 30000;
 export const diffAmount = 10; // Not enough amount to return loan
 
 //export const chainId = 1;// Ethereum
