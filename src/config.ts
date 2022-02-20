@@ -26,6 +26,7 @@ export const baseTokens = [
   ERC20Token.USDC,
   ERC20Token.USDT,
   // ERC20Token.WMATIC,
+  ERC20Token.WBTC,
 ];
 
 export const tradingTokens = [
