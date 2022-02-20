@@ -1,7 +1,7 @@
 import { ERC20Token } from "./constants/addresses";
 
 // interval of price check (ms)
-export const interval = 1_500;
+export const interval = 1_200;
 
 export const renderInterval = Math.floor(interval / 2);
 
