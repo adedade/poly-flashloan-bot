@@ -6,7 +6,7 @@ export const interval = 1_000;
 export const renderInterval = Math.floor(interval / 2);
 
 export const loanAmount = 30000;
-export const diffAmount = 10; // Not enough amount to return loan
+export const diffAmount = 15; // Not enough amount to return loan
 
 //export const chainId = 1;// Ethereum
 //export const chainId = 56;// Binance Smart Chain
@@ -54,7 +54,7 @@ export const routeParts = [
   [10000],
   [8000, 2000],
   [5000, 4000, 1000],
-  [5000, 3000, 1000, 1000],
-  [3000, 2000, 2000, 2000, 1000],
-  [2000, 2000, 2000, 2000, 1000, 1000],
+  // [5000, 3000, 1000, 1000],
+  // [3000, 2000, 2000, 2000, 1000],
+  // [2000, 2000, 2000, 2000, 1000, 1000],
 ];
