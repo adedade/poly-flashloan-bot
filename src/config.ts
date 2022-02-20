@@ -24,13 +24,13 @@ export const baseTokens = [
   ERC20Token.DAI,
   // ERC20Token.WETH,
   ERC20Token.USDC,
-  ERC20Token.USDT,
+  // ERC20Token.USDT,
   // ERC20Token.WMATIC,
 ];
 
 export const tradingTokens = [
   ERC20Token.DAI,
-  // ERC20Token.WETH,
+  ERC20Token.WETH,
   ERC20Token.USDC,
   ERC20Token.USDT,
   ERC20Token.WMATIC,
