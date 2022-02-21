@@ -47,7 +47,7 @@ export const main = async () => {
 
     params: {
       flashLoanPool: findPool(decodedInput.args.params.flashLoanPool),
-      loanAmount: decodedInput.args.params.loanAmount.toNumber(),
+      loanAmount: decodedInput.args.params.loanAmount.toString(),
       firstRoutes: decodedInput.args.params.firstRoutes.map(
         (route: IFlashloanRoute) => JSON.stringify(router(route))
       ),

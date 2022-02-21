@@ -1,11 +1,11 @@
 import { ERC20Token } from "./constants/addresses";
 
 // interval of price check (ms)
-export const interval = 1_000;
+export const interval = 800;
 
 export const renderInterval = Math.floor(interval / 2);
 
-export const loanAmount = 30000;
+export const loanAmount = 300_000;
 export const diffAmount = 15; // Not enough amount to return loan
 
 //export const chainId = 1;// Ethereum
